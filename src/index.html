@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate Ukraine</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Noto+Sans:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<header class="header">
+    <div class="home-wrapper">
+        <div class="logo"></div>
+        <div class="wrapper-menu-icon" onclick="toggleMenu()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <ul class="menu-list" onclick="toggleMenu()">
+            <li>
+                <div class="menu-icon-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <polygon points="0,0 24,24" style="stroke-width: 1; stroke: white;"></polygon>
+                        <polygon points="0,24 24,0" style="stroke-width: 1; stroke: white;"></polygon>
+                    </svg>
+                </div>
+            </li>
+            <li>
+                <div class="menu-contacts">
+                    <a href="tel:+380505324244" class="menu-contacts-phone">+380 50 53 24 244</a>
+                    <a href="mailto:contact@reukraine.com" class="menu-contacts-email">contact@reukraine.com</a>
+                </div>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#how-works">How it works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li>
+                <a href="#contacts" class="menu-contacts-link">
+                    <div>Contacts</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="header-wrapper">
+        <h1>We lead.<br>Others Follow.</h1>
+        <div class="header-text-wrapper">
+            <h5>Discover property with Real Estate Ukraine</h5>
+            <p>RE Ukraine is a specialized agency that provides clients with a full range of services in the Ukrainian
+                real
+                estate market, starting with preliminary consultations and ending with after-sales support and full
+                management
+                of real estate.</p>
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="section-services" id="services">
+        <p class="menu-item">Services</p>
+        <h3>We offer you the seamless experience of renting or buying real estate</h3>
+        <div class="wrapper-services">
+            <div><img src="img/icons-average.png" alt="coins">Selection of the best option for investment</div>
+            <div><img src="img/icons-warehouse.png" alt="warehouse">Sale, purchase and rental of residential, office and
+                retail property
+            </div>
+            <div><img src="img/icons-shop.png" alt="shop">Sale, purchase of a ready-made business</div>
+            <div><img src="img/icons-guarantee.png" alt="guarantee">Transaction support and after&#8209;sales service
+            </div>
+            <div><img src="img/icons-auction.png" alt="auction">Legal advices</div>
+            <div><img src="img/icons-handshake.png" alt="handshake">Cooperation for many years</div>
+        </div>
+    </section>
+    <section id="places">
+        <div class="places-column">
+            <p class="menu-item">Places</p>
+        </div>
+        <h2>There are places that might be interesting for you or your business</h2>
+
+        <div class="places-slider-container">
+            <div class="places-slider">
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/IQ-Business-Center.png">
+                        <div class="slider-item-text">IQ Business Center</div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/Boulevard-of-Fountains.png">
+                        <div class="slider-item-text">IQ Business Center</div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/Jack-House.png">
+                        <div class="slider-item-text">IQ Business Center</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-control-container">
+            <a class="carousel-control-prev" data-slide="prev"></a>
+            <a class="carousel-control-next" data-slide="next"></a>
+        </div>
+    </section>
+
+    <section id="how-works">
+        <p class="menu-item">How it works</p>
+
+        <h2>We want to make our cooperation as efficient as possible. You need only five steps to make everything
+            happen.</h2>
+
+        <div class="steps-container">
+            <div>
+                <p>Step 1</p>
+                <p>You contact us</p>
+            </div>
+            <div>
+                <p>Step 2</p>
+                <p>We arrange a meeting</p>
+            </div>
+            <div>
+                <p>Step 3</p>
+                <p>You tell your requirements</p>
+            </div>
+            <div>
+                <p>Step 4</p>
+                <p>Sign an agreement</p>
+            </div>
+            <div>
+                <p>Step 5</p>
+                <p>Getting started</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="howto-img">
+    </div>
+
+    <section id="about">
+        <!--        <p>About</p>-->
+        <h2>The RE Ukraine company offers a full range of services for transactions of any complexity with real estate
+            in Kyiv.</h2>
+        <p>Turning to our specialists in Kyiv, you can get a free consultation from professional real estate brokers, as
+            well as find out the current prices for residential and commercial real estate in Kiev, the market value of
+            apartments, you can profitably sell or buy an apartment, rent apartments for long or short term, as well as
+            rent offices, retail premises and other real estate you are interested in Ukraine</p>
+        <div class="contact-us-btn">Contact us</div>
+    </section>
+    <section id="partners">
+        <p class="menu-item">Partners</p>
+
+        <div class="partners-carousel-control-container">
+            <a class="partners-carousel-control-prev1" data-slide="prev"></a>
+            <a class="partners-carousel-control-next1 display-none" data-slide="next"></a>
+            <a class="partners-carousel-control-prev2 display-none" data-slide="prev"></a>
+            <a class="partners-carousel-control-next2" data-slide="next"></a>
+        </div>
+
+        <div class="partners-slider-container">
+            <div class="partners-slider1">
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-aspo.png" alt="aspo">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-est.png" alt="est">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-ria.png" alt="dom-ria">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-work.png" alt="work.ua">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-rabota.png" alt="rabota.ua">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-slider2">
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-novostroy.png" alt="novostroy.ua">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-olx.png" alt="olx">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-m2.png" alt="m2">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-lun.png" alt="lun">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-aviso.png" alt="aviso">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item-wrapper">
+                        <img src="img/partner-rieltor.png" alt="rieltor.ua">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <p class="menu-item">Contacts</p>
+        <h4>Real estate won&#700;t be complicated because we are here for you</h4>
+        <div class="contacts-wrapper">
+            <p class="call-text">You can leave your phone number and we will call you!</p>
+            <div class="call-form">
+                <label>
+                    <input type="tel" name="tel" placeholder="+380 50 23 24 234">
+                </label>
+                <div class="call-btn">Call Me</div>
+            </div>
+        </div>
+        <div class="reference-wrapper">
+            <p class="reference-telegram">Contact us on Telegram</p>
+            <a>@reukraine</a>
+        </div>
+        <div class="contact-form">
+            <label><input type="text" placeholder="Name" required></label>
+            <label><input type="email" placeholder="Email" required></label>
+            <label><textarea placeholder="Message" rows="5" required></textarea></label>
+            <div class="contact-btn">Send</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>A brand of <u>Ukrainify</u></p>
+    <p>Made by <u>Ukraine IT</u></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
