@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -8,8 +9,9 @@
 }
 
 body {
-    font-size: 7.5vw;
+    font-size: 4vh;
     min-width: 400px;
+    max-width: 100vw;
 }
 
 body.no-scroll {
@@ -26,8 +28,8 @@ body.no-scroll {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    padding-bottom:17.5vw;
-    box-sizing: border-box;
+    /*padding-bottom:17.5vw;*/
+    /*box-sizing: border-box;*/
 }
 
 .home-wrapper {
@@ -66,7 +68,7 @@ body.no-scroll {
 .menu {
     position: fixed;
     top: 0;
-    left: 110vw;
+    left: 150vw;
     background: #030514;
     width: 100%;
     height: 100vh;
@@ -267,7 +269,7 @@ h1 {
 }
 
 #places {
-    height: 223vw;
+    /*height: 223vw;*/
     background: linear-gradient(to right, #fafafa, #fafafa) no-repeat -64vw 0;
     padding: 15.6vw 0 0 11vw;
     box-sizing: border-box;
@@ -286,7 +288,7 @@ h1 {
 }
 
 .places-slider-container {
-    width: 89vw;
+    width: 100%;
     height: 89.5vw;
     box-sizing: border-box;
 }
@@ -382,7 +384,7 @@ h1 {
     box-sizing: border-box;
     border-left: 1.875vw solid #f7b374;
     height: 28.125vw;
-    width: 81.25vw;
+    width: 100%;
     box-shadow: 0 0 10vw rgba(0, 0, 0, .05);
     display: flex;
     flex-direction: column;
@@ -408,14 +410,13 @@ h1 {
 }
 
 .howto-img {
-    background: url(img/post-small.png) no-repeat;
-    background-size: contain;
     width: 100%;
-    height: 93.75vw;
+    /*height: 93.75vw;*/
 }
 
 #about {
-    height: 219vw;
+    margin-top: -1vh;
+    /*height: 219vw;*/
     background: #030514;
     color: #fff;
     box-sizing: border-box;
@@ -459,7 +460,7 @@ h1 {
 }
 
 #partners {
-    height: 137vw;
+    /*height: 137vw;*/
     padding: 15.6vw 9.375vw 0 0;
     box-sizing: border-box;
 }
@@ -528,7 +529,7 @@ h1 {
 }
 
 #contacts {
-    height: 315vw;
+    /*height: 315vw;*/
     padding: 15.6vw 9.375vw;
     background: linear-gradient(to right, #fafafa, #fafafa) no-repeat 18vw 90vw;
     box-sizing: border-box;
