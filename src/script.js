@@ -21,5 +21,11 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
     });
-
+    $('a').click(function () {
+        if(this.href.includes("#")){
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        }
+    });
 });
