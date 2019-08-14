@@ -19,7 +19,7 @@ body.no-scroll {
 
 .header {
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.4)), url(img/header-bg-1.png) no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-1.png") no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -37,18 +37,16 @@ body.no-scroll {
 
 .logo {
     align-self: flex-start;
-    background: url(img/logo.png) no-repeat white center;
+    background: url("img/logo.png") no-repeat white center;
     background-size: auto 53.51%;
     width: 100px;
     height: 100px;
     margin-right: auto;
 }
 
-.home-menu {
-    display: none;
-}
-
-.home-contacts {
+.home-menu,
+.home-contacts,
+.how-works-line {
     display: none;
 }
 
@@ -86,16 +84,16 @@ body.no-scroll {
     list-style: none;
     display: grid;
     grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 1fr;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .menu-list a {
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
@@ -129,7 +127,7 @@ body.no-scroll {
     display: grid;
     grid-template-columns: 19fr 21fr;
     padding-right: 0 !important;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -137,7 +135,8 @@ body.no-scroll {
     color: #030514;
 }
 
-.menu-contacts-phone, .menu-contacts-email {
+.menu-contacts-phone,
+.menu-contacts-email {
     display: flex;
     justify-content: center !important;
     align-items: center;
@@ -156,7 +155,7 @@ body.no-scroll {
 }
 
 .header-wrapper {
-    color: #FFFFFF;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,14 +164,13 @@ body.no-scroll {
 }
 
 .header-wrapper h1 {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 150%;
     letter-spacing: -0.05em;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
-    /*height: 213.81px;*/
     display: flex;
     align-items: flex-end;
     padding: 8px 30px 18px 30px;
@@ -183,7 +181,7 @@ body.no-scroll {
 }
 
 .header-text-wrapper h5 {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -193,7 +191,7 @@ body.no-scroll {
 }
 
 .header-text-wrapper p {
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -207,7 +205,7 @@ main section {
 }
 
 .section-label {
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -218,7 +216,7 @@ main section {
 }
 
 main section h3 {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -237,11 +235,11 @@ main section h3 {
     height: 156px;
     border-left: 6px solid #f7b374;
     box-shadow: 0 0 36px rgba(0, 0, 0, .05);
-    background: #FFFFFF;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -272,9 +270,6 @@ main section h3 {
     padding-left: 30px;
 }
 
-.places-slider {
-}
-
 .places-slider .slider-item {
     width: 260px;
     height: 286.52px;
@@ -292,13 +287,13 @@ main section h3 {
     width: 100%;
     height: 48px;
     background: #030514;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 150%;
     letter-spacing: -0.05em;
-    color: #FFFFFF;
+    color: #fff;
     padding-left: 15.65px;
     display: flex;
     align-items: center;
@@ -328,13 +323,9 @@ main section h3 {
 #how-works .section-item {
     height: 90px;
     justify-content: center;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-}
-
-.how-works-line {
-    display: none;
 }
 
 #how-works .section-item p:first-of-type {
@@ -376,38 +367,38 @@ main section h3 {
 }
 
 .about-line-wrapper span {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, .4);
     height: 1px;
     width: 100%;
 }
 
 #about .section-label {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, .6);
     margin-right: 20px;
     margin-bottom: 0;
 }
 
 #about h3 {
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .about-text {
     margin-top: 30px;
-    font-family: Noto San, sans-serif;
+    font-family: "Noto San", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, .6);
 }
 
 .contact-us-btn {
     margin-top: 40px;
     width: 100%;
     height: 60px;
-    background: #FFFFFF;
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.05);
-    font-family: Montserrat, sans-serif;
+    background: #fff;
+    box-shadow: 0 0 36px rgba(0, 0, 0, .05);
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -473,7 +464,7 @@ main section h3 {
 }
 
 #contacts {
-    background: #FAFAFA;
+    background: #fafafa;
 }
 
 #contacts .contacts-wrapper {
@@ -482,12 +473,12 @@ main section h3 {
 }
 
 #contacts .call-text {
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 150%;
-    color: rgba(3, 5, 20, 0.8);
+    color: rgba(3, 5, 20, .8);
 }
 
 #contacts .call-form {
@@ -495,7 +486,7 @@ main section h3 {
     grid-template-columns: 171.31fr 90.63fr;
     width: 100%;
     height: 48px;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -508,8 +499,8 @@ main section h3 {
     width: 100%;
     height: 100%;
     padding-left: 18px;
-    background: #FFFFFF;
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    box-shadow: 0 0 36px rgba(0, 0, 0, .05);
     color: rgba(3, 5, 20, .4);
 }
 
@@ -519,11 +510,11 @@ main section h3 {
     justify-content: center;
     align-items: center;
     line-height: 16px;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 #contacts .reference-wrapper {
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 150%;
@@ -537,7 +528,7 @@ main section h3 {
 
 #contacts .reference-wrapper a {
     font-size: 16px;
-    color: #000000;
+    color: #000;
 }
 
 .contact-form {
@@ -546,7 +537,7 @@ main section h3 {
     grid-gap: 20px;
     grid-template-rows: 60px 60px 262px 60px;
     width: 100%;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -555,7 +546,7 @@ main section h3 {
 }
 
 .contact-form input {
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 36px rgba(0, 0, 0, .05);
     border: none;
     resize: none;
     padding: 0 22px;
@@ -564,7 +555,7 @@ main section h3 {
 }
 
 .contact-form textarea {
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 36px rgba(0, 0, 0, .05);
     border: none;
     resize: none;
     padding: 20px 22px;
@@ -573,8 +564,8 @@ main section h3 {
 }
 
 .contact-form .contact-btn {
-    box-shadow: 0 0 36px rgba(0, 0, 0, 0.05);
-    color: #FFFFFF;
+    box-shadow: 0 0 36px rgba(0, 0, 0, .05);
+    color: #fff;
     background: #030514;
     display: flex;
     justify-content: center;
@@ -584,12 +575,12 @@ main section h3 {
 footer {
     height: 126.8px;
     background: #030514;
-    font-family: Noto Sans, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 200%;
-    color: #FFFFFF;
+    color: #fff;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -604,7 +595,7 @@ footer p {
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
 
     .header {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.4)), url(img/header-bg-2.png) no-repeat;
+        background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-2.png") no-repeat;
         background-size: cover;
     }
 
@@ -620,7 +611,7 @@ footer p {
     .home-contacts {
         height: 100%;
         display: flex;
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -628,12 +619,12 @@ footer p {
     }
 
     .home-contacts-phone {
-        width:140px;
+        width: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     .home-contacts-email {
@@ -641,9 +632,9 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #F7B374;
+        background: #f7b374;
         text-decoration: none;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     .menu-icon-open-wrapper {
@@ -795,7 +786,7 @@ footer p {
     }
 
     .places-slider-prev {
-        background: url("img/Arrow-prev.png") no-repeat center, #FAFAFA;
+        background: url("img/Arrow-prev.png") no-repeat center, #fafafa;
     }
 
     #how-works .section-item-container {
@@ -817,7 +808,7 @@ footer p {
         position: absolute;
         left: 0;
         height: 1px;
-        background: #E6E6E6;
+        background: #e6e6e6;
         width: 100vw;
         z-index: -1;
     }
@@ -837,7 +828,7 @@ footer p {
     .contact-us-btn {
         margin-top: 50px;
         width: 300px;
-        background: #FFFFFF;
+        background: #fff;
     }
 
 
@@ -896,7 +887,7 @@ footer p {
 @media only screen and (min-width: 1200px) {
 
     .header {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.4)), url(img/header-bg-3.png) no-repeat;
+        background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-3.png") no-repeat;
         background-size: cover;
     }
 
@@ -935,18 +926,18 @@ footer p {
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-family: Noto Sans, sans-serif;
+        font-family: "Noto Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     .home-contacts {
         height: 100%;
         display: flex;
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -959,7 +950,7 @@ footer p {
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     .home-contacts-email {
@@ -967,9 +958,9 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #F7B374;
+        background: #f7b374;
         text-decoration: none;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     .header-wrapper {
@@ -1031,7 +1022,6 @@ footer p {
         margin-right: 16px;
     }
 
-
     #places {
         padding: 130px 0 170px 0;
         background: linear-gradient(to right, #fff, #fff) no-repeat 504px 0, #fafafa;
@@ -1072,7 +1062,7 @@ footer p {
     }
 
     .places-slider-prev {
-        background: url("img/Arrow-prev.png") no-repeat center, #FAFAFA;
+        background: url("img/Arrow-prev.png") no-repeat center, #fafafa;
     }
 
     #how-works {
@@ -1140,7 +1130,7 @@ footer p {
     .contact-us-btn {
         margin-top: 50px;
         width: 300px;
-        background: #FFFFFF;
+        background: #fff;
     }
 
     #partners {
@@ -1185,9 +1175,6 @@ footer p {
         margin-bottom: 100px;
     }
 
-    #contacts .contact-form {
-    }
-
     footer {
         height: 90px;
         padding: 0 135px;
@@ -1200,5 +1187,3 @@ footer p {
         padding: 4px 0;
     }
 }
-
-
