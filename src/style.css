@@ -619,9 +619,7 @@ footer p {
 
     .home-contacts {
         height: 100%;
-        width: 510px;
-        display: grid;
-        grid-template-columns: 57fr 28fr;
+        display: flex;
         font-family: Roboto, sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -630,15 +628,16 @@ footer p {
     }
 
     .home-contacts-phone {
+        width:140px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         text-decoration: none;
-        padding-right: 20px;
         color: #FFFFFF;
     }
 
     .home-contacts-email {
+        width: 168px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -885,6 +884,12 @@ footer p {
 
     footer p {
         padding: 4px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .home-wrapper {
+        padding: 0 90px !important;
     }
 }
 
@@ -1159,7 +1164,7 @@ footer p {
 
     #contacts {
         padding: 100px 130px;
-        display:flex;
+        display: flex;
 
     }
 
@@ -1180,7 +1185,7 @@ footer p {
         margin-bottom: 100px;
     }
 
-    #contacts .contact-form{
+    #contacts .contact-form {
     }
 
     footer {
