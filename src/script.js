@@ -3,7 +3,6 @@ function toggleMenu() {
     document.querySelector("body").classList.toggle("no-scroll");
 }
 
-
 $(document).ready(function () {
     $('.places-slider').slick({
         mobileFirst: false,
@@ -48,11 +47,12 @@ $(document).ready(function () {
         ]
     });
 
-    $('a').click(function () {
+    $('a').click(function (e) {
         if(this.href.includes("#")){
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
+            e.preventDefault();
         }
     });
 });
