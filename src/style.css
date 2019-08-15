@@ -19,17 +19,22 @@ body.no-scroll {
 
 .header {
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-1.png") no-repeat;
+    background: radial-gradient(320.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-1.png") no-repeat;
+    /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-1.png") no-repeat;*/
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.home{
+    width:100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
 .home-wrapper {
     height: 60px;
     padding-left: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, .4);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -38,7 +43,8 @@ body.no-scroll {
 .logo {
     align-self: flex-start;
     background: url("img/logo.png") no-repeat white center;
-    background-size: auto 53.51%;
+    background-size: 58.79px 53.51px;
+    /*background-size: auto 53.51%;*/
     width: 100px;
     height: 100px;
     margin-right: auto;
@@ -309,14 +315,14 @@ main section h3 {
 .places-slider-prev {
     width: 60px;
     height: 60px;
-    background: url("img/Arrow-prev.png") no-repeat center, white;
+    background: url("img/Arrow-prev.svg") no-repeat center, white;
     background-size: 30%;
 }
 
 .places-slider-next {
     width: 60px;
     height: 60px;
-    background: url("img/Arrow-next.png") no-repeat center, black;
+    background: url("img/Arrow-next.svg") no-repeat center, #030514;
     background-size: 30%;
 }
 
@@ -419,14 +425,14 @@ main section h3 {
 .partners-slider-prev {
     width: 60px;
     height: 60px;
-    background: url("img/Arrow-prev.png") no-repeat center, white;
+    background: url("img/Arrow-prev.svg") no-repeat center, white;
     background-size: 30%;
 }
 
 .partners-slider-next {
     width: 60px;
     height: 60px;
-    background: url("img/Arrow-next.png") no-repeat center, black;
+    background: url("img/Arrow-next.svg") no-repeat center, #030514;
     background-size: 30%;
 }
 
@@ -546,6 +552,12 @@ main section h3 {
 }
 
 .contact-form input {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(3, 5, 20, .6);
     box-shadow: 0 0 36px rgba(0, 0, 0, .05);
     border: none;
     resize: none;
@@ -555,6 +567,12 @@ main section h3 {
 }
 
 .contact-form textarea {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(3, 5, 20, .6);
     box-shadow: 0 0 36px rgba(0, 0, 0, .05);
     border: none;
     resize: none;
@@ -581,6 +599,10 @@ footer {
     font-size: 14px;
     line-height: 200%;
     color: #fff;
+}
+
+footer .section-content {
+    height:100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -595,7 +617,8 @@ footer p {
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
 
     .header {
-        background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-2.png") no-repeat;
+        background: radial-gradient(800.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-2.png") no-repeat;
+        /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-2.png") no-repeat;*/
         background-size: cover;
     }
 
@@ -606,6 +629,7 @@ footer p {
     .logo {
         width: 170px;
         height: 170px;
+        background-size: 78px 71px;
     }
 
     .home-contacts {
@@ -647,12 +671,12 @@ footer p {
     }
 
     .header-wrapper {
-        padding-top: 110px;
+        padding-top: 0;
     }
 
     .header-wrapper h1 {
         font-size: 60px;
-        padding: 16px 60px 38px 60px;
+        padding: 26px 60px 10px 60px;
     }
 
     .header-wrapper h1 br {
@@ -786,7 +810,7 @@ footer p {
     }
 
     .places-slider-prev {
-        background: url("img/Arrow-prev.png") no-repeat center, #fafafa;
+        background: url("img/Arrow-prev.svg") no-repeat center, #fafafa;
     }
 
     #how-works .section-item-container {
@@ -867,6 +891,10 @@ footer p {
 
     footer {
         height: 90px;
+    }
+
+    footer .section-content {
+        height:100%;
         padding: 0 60px;
         flex-direction: row;
         justify-content: space-between;
@@ -878,21 +906,18 @@ footer p {
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .home-wrapper {
-        padding: 0 90px !important;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
 
     .header {
-        background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-3.png") no-repeat;
+        background: radial-gradient(1440.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-3.png") no-repeat;
+        /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-3.png") no-repeat;*/
         background-size: cover;
     }
 
     .home-wrapper {
-        padding: 0 135px;
+        padding: 0;
+        margin:0 auto;
+        width: 1170px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -902,6 +927,7 @@ footer p {
         width: 170px;
         height: 170px;
         margin: 0;
+        background-size: 78px 71px;
     }
 
     .menu-icon-open-wrapper {
@@ -972,7 +998,12 @@ footer p {
 
     .header-wrapper h1 {
         font-size: 60px;
-        padding: 16px 135px 38px 135px;
+        padding: 20px 0 10px 0;
+    }
+
+    .header-wrapper h1 span {
+        margin:0 auto;
+        width: 1170px;
     }
 
     .header-wrapper h1 br {
@@ -980,7 +1011,9 @@ footer p {
     }
 
     .header-text-wrapper {
-        padding: 17px 135px 24px 135px;
+        margin:0 auto;
+        width: 1170px;
+        padding: 17px 0 24px 0;
         display: grid;
         grid-gap: 30px;
         grid-template-columns: 202.73fr 443fr;
@@ -997,7 +1030,12 @@ footer p {
     }
 
     main section {
-        padding: 150px 135px;
+        padding: 150px 0;
+    }
+
+    main section .section-content {
+        margin:0 auto;
+        width: 1170px;
     }
 
     main section h3 {
@@ -1027,15 +1065,21 @@ footer p {
         background: linear-gradient(to right, #fff, #fff) no-repeat 504px 0, #fafafa;
     }
 
+    #places .section-content {
+        width:unset;
+        margin-left: calc((100% - 1170px)/2);
+        margin-right: 0;
+    }
+
     #places .section-label,
     #places h3 {
-        margin-left: 336px;
+        margin-left: 0;
     }
 
     .places-slider-container {
         position: relative;
         margin-top: 60px;
-        padding-left: 336px;
+        padding-left: 0;
     }
 
     .places-slider .slider-item {
@@ -1058,21 +1102,24 @@ footer p {
         margin: 0;
         position: absolute;
         top: 120px;
-        left: 250px;
+        left: -90px;
     }
 
     .places-slider-prev {
-        background: url("img/Arrow-prev.png") no-repeat center, #fafafa;
+        background: url("img/Arrow-prev.svg") no-repeat center, #fafafa;
     }
 
     #how-works {
-        padding: 150px 135px;
+        padding: 150px 0;
+    }
+
+    #how-works .section-content {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    #how-works > div:first-child {
+    #how-works .section-content  > div:first-child {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
@@ -1134,7 +1181,7 @@ footer p {
     }
 
     #partners {
-        padding: 120px 135px 170px 135px;
+        padding: 120px 0 170px 0;
     }
 
     .partners-slider1 .slider-item,
@@ -1153,9 +1200,11 @@ footer p {
     }
 
     #contacts {
-        padding: 100px 130px;
-        display: flex;
+        padding: 100px 0;
+    }
 
+    #contacts .section-content {
+        display: flex;
     }
 
     #contacts h3 {
@@ -1177,7 +1226,13 @@ footer p {
 
     footer {
         height: 90px;
-        padding: 0 135px;
+        padding: 0;
+    }
+
+    footer .section-content {
+        margin:0 auto;
+        width: 1170px;
+        height:100%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
