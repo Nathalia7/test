@@ -20,7 +20,6 @@ body.no-scroll {
 .header {
     position: relative;
     background: radial-gradient(320.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-1.png") no-repeat;
-    /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-1.png") no-repeat;*/
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -44,7 +43,6 @@ body.no-scroll {
     align-self: flex-start;
     background: url("img/logo.png") no-repeat white center;
     background-size: 58.79px 53.51px;
-    /*background-size: auto 53.51%;*/
     width: 100px;
     height: 100px;
     margin-right: auto;
@@ -618,7 +616,6 @@ footer p {
 
     .header {
         background: radial-gradient(800.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-2.png") no-repeat;
-        /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-2.png") no-repeat;*/
         background-size: cover;
     }
 
@@ -910,7 +907,6 @@ footer p {
 
     .header {
         background: radial-gradient(1440.00px at 0% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("img/header-bg-3.png") no-repeat;
-        /*background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(255, 255, 255, .4)), url("img/header-bg-3.png") no-repeat;*/
         background-size: cover;
     }
 
